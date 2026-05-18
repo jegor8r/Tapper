@@ -85,4 +85,8 @@ header{
     position: fixed;
     bottom: 30px;
     right: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(4, 2fr);
+    gap: 10px;
 }
