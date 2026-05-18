@@ -19,7 +19,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 15%;
     height: 50px;
     background-color: #E76F51;
     color: white;
@@ -31,7 +31,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 25%;
     height: 50px;
     background-color: #0D2137;
     color: #5ED8E8 ;
@@ -43,7 +43,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 15%;
     height: 50px;
     background-color: #2ECC71;
     color: white;
@@ -74,19 +74,76 @@ header{
 .mapBox{
     position: fixed;
     bottom: 30px;
-    left: 50px;
+    left: 60px;
 }
 .mapBox :hover{
     cursor: pointer;
     scale: 1.5;
     transition-duration: 0.3s;
 }
-.linkBox{
+.LinkBox{
     position: fixed;
-    bottom: 30px;
+    bottom: 10%;
     right: 50px;
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(4, 2fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 12px;
+    width: 280px;
+    justify-items: stretch;
+    align-items: center;
+}
+.LinkBox > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+}
+.LinkBox > div:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition-duration: 0.3s;
+}
+.LinkBox img{
+    width: 150px;
+    height: 150px;
+}
+.LinkBox > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.LinkBox > div:hover{
+    cursor: pointer;
+    scale: 1.2;
+    transition-duration: 0.3s;
+}
+.LinkBox img{
+    width: 100px;
+    height: 100px;
+}
+.Store{
+    position: fixed;
+    right: 50px;
+    bottom: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    background: rgba(12, 34, 56, 0.65);
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+    min-width: 240px;
+}
+.Store h1{
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
