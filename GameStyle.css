@@ -21,8 +21,9 @@ header{
     justify-content: center;
     width: 100px;
     height: 50px;
-    background-color: rgb(254, 15, 15);
+    background-color: #E76F51;
     color: white;
+    border-color: #FF7878 · opacity 0.35;
     font-size: 20px;
     border-radius: 10px;
 }
@@ -32,8 +33,9 @@ header{
     justify-content: center;
     width: 150px;
     height: 50px;
-    background-color: rgb(0, 0, 73);
-    color: white;
+    background-color: #0D2137;
+    color: #5ED8E8 ;
+    border-color: #5EB4E8 · opacity 0.4;
     font-size: 20px;
     border-radius: 10px;
 }
@@ -43,8 +45,9 @@ header{
     justify-content: center;
     width: 100px;
     height: 50px;
-    background-color: rgb(2, 81, 2);
+    background-color: #2ECC71;
     color: white;
+    border-color: #50DC8C · opacity 0.35;
     font-size: 20px;
     border-radius: 10px;
 }
@@ -54,8 +57,9 @@ header{
     justify-content: center;
     width: 80px;
     height: 80px;
-    background-color: rgb(255, 255, 0);
-    color: black;
+    background-color:#FFD23C;
+    border-color: rgba(255,255,255, 0.35);
+    color: white;
     border-radius: 50%;
 }
 #moodIcon{
@@ -66,4 +70,19 @@ header{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.mapBox{
+    position: fixed;
+    bottom: 30px;
+    left: 50px;
+}
+.mapBox :hover{
+    cursor: pointer;
+    scale: 1.5;
+    transition-duration: 0.3s;
+}
+.linkBox{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
 }
