@@ -14,3 +14,11 @@ Dolphin.addEventListener("click", function() {
     scoreValue += 1;
     score.textContent = `★ Score: ${scoreValue}`;
 });
+
+function saveScore() {
+    localStorage.setItem("score", scoreValue);
+    localStorage.setItem("HP", HP.textContent);
+    localStorage.setItem("level", level.textContent);
+    localStorage.setItem("mood", mood.src); 
+    setInterval(saveScore, 1000);
+}
