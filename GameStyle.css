@@ -11,6 +11,7 @@ body{
 .Dolphin :hover{
     cursor: pointer;
 }
+/* Header styles */
 header{
     display: flex;
     align-items: center;
@@ -74,6 +75,7 @@ header{
     height: 100%;
     object-fit: contain;
 }
+/* Header end*/
 .mapBox{
     position: fixed;
     bottom: 30px;
