@@ -74,17 +74,6 @@ function clearSave() {
     localStorage.removeItem('tapper_save');
 }
 
-if (saveBtn) saveBtn.addEventListener('click', saveGame);
-if (loadBtn) loadBtn.addEventListener('click', () => {
-    const ok = loadGame();
-    if (!ok) console.log('No save found');
-});
-if (clearBtn) clearBtn.addEventListener('click', () => {
-    clearSave();
-    console.log('Save cleared');
-});
-
-
 const AUTO_SAVE_INTERVAL_MS = 5000;
 setInterval(saveGame, AUTO_SAVE_INTERVAL_MS);
 
