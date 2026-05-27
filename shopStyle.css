@@ -1,0 +1,112 @@
+body{
+    background-image: url(pictures/Background/SeaBackground.jpg);
+    background-size: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+#HPBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 50px;
+    background-color: #E76F51;
+    color: white;
+    border-color: #FF7878 · opacity 0.35;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#levelBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 50px;
+    background-color: #0D2137;
+    color: #5ED8E8 ;
+    border-color: #5EB4E8 · opacity 0.4;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#ScoreBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 50px;
+    background-color: #2ECC71;
+    color: white;
+    border-color: #50DC8C · opacity 0.35;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#moodBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color:#FFD23C;
+    border-color: rgba(255,255,255, 0.35);
+    color: white;
+    border-radius: 50%;
+}
+#moodIcon{
+    width: 70px;
+    height: 70px;
+}
+#moodIcon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.categorries{
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    display: column;
+    gap: 20px;
+    width: 20%;
+}
+.categories > div{
+    position: relative;
+    min-height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 20%;
+}
+.categories > div p{
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e0ee6;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.45);
+    transition: opacity 0.2s ease;
+}
+.categories img{
+    width: 80%;
+    height: 80%;
+    margin-right: 10px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.categories > div:hover img{
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+.categories > div:hover p{
+    opacity: 1;
+}
