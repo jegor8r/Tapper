@@ -75,6 +75,7 @@ header{
     border-radius: 10px;
     overflow: hidden;
     width: 20%;
+    margin: 10px;
 }
 .categories > div p{
     position: absolute;
@@ -104,4 +105,35 @@ header{
 }
 .categories > div:hover p{
     opacity: 1;
+}
+
+
+.categories > div.active{
+    background-color: rgba(94, 216, 232, 0.9);
+    border: 2px solid #5ED8E8;
+    box-shadow: 0 0 10px rgba(94, 216, 232, 0.5);
+}
+.categories > div.active img{
+    opacity: 1;
+}
+.categories > div.active p{
+    opacity: 1;
+    color: white;
+}
+#itemsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.item{
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
